@@ -131,3 +131,5 @@
 ### Joomla
 
 > site:*/joomla/login
+
+### 文件上传（File Upload）
