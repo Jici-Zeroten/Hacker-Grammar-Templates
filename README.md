@@ -6,8 +6,6 @@
 
 ---
 
-test
-
 ### Broad domain search w/ negative search
 
 > site:example.com -www -shop -share -ir -mfa
