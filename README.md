@@ -6,10 +6,6 @@
 
 ---
 
-### Broad domain search w/ negative search
-
-> site:example.com -www -shop -share -ir -mfa
-
 ### PHP站点且带参数
 
 > site:example.com ext:php inurl:?
