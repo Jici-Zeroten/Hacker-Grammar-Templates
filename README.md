@@ -133,3 +133,5 @@
 > site:*/joomla/login
 
 ### 文件上传（File Upload）
+
+> (site:example[.]com | site:example[.]org) & intext:"choose file"
