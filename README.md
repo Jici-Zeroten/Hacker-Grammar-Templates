@@ -6,6 +6,8 @@
 
 ---
 
+## 基本型漏洞搜索模板
+
 ### PHP站点且带参数
 
 > site:example.com ext:php inurl:?
