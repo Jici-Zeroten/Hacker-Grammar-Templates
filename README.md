@@ -6,8 +6,6 @@
 
 ---
 
-## 基本型漏洞搜索模板
-
 ### Broad domain search w/ negative search
 
 > site:example.com -www -shop -share -ir -mfa
