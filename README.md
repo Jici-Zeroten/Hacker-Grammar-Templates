@@ -8,6 +8,10 @@
 
 ## 基本型漏洞搜索模板
 
+### Broad domain search w/ negative search
+
+> site:example.com -www -shop -share -ir -mfa
+
 ### PHP站点且带参数
 
 > site:example.com ext:php inurl:?
@@ -20,7 +24,7 @@
 
 > site:"example[.]com" ext:log | ext:txt | ext:conf | ext:cnf | ext:ini | ext:env | ext:sh | ext:bak | ext:backup | ext:swp | ext:old | ext:~ | ext:git | ext:svn | ext:htpasswd | ext:htaccess
 
-### XSS prone parameters
+### XSS倾向性参数
 
 > inurl:q= | inurl:s= | inurl:search= | inurl:query= | inurl:keyword= | inurl:lang= inurl:& site:example.com
 
@@ -28,19 +32,19 @@
 
 > inurl:url= | inurl:return= | inurl:next= | inurl:redirect= | inurl:redir= | inurl:ret= | inurl:r2= | inurl:page= inurl:& inurl:http site:example.com
 
-### SQLi Prone Parameters
+### SQLi倾向性参数
 
 > inurl:id= | inurl:pid= | inurl:category= | inurl:cat= | inurl:action= | inurl:sid= | inurl:dir= inurl:& site:example.com
 
-### SSRF Prone Parameters
+### SSRF倾向性参数
 
 > inurl:http | inurl:url= | inurl:path= | inurl:dest= | inurl:html= | inurl:data= | inurl:domain=  | inurl:page= inurl:& site:example.com
 
-### LFI Prone Parameters
+### LFI（本地文件包含）倾向性参数
 
 > inurl:include | inurl:dir | inurl:detail= | inurl:file= | inurl:folder= | inurl:inc= | inurl:locate= | inurl:doc= | inurl:conf= inurl:& site:example.com
 
-### RCE Prone Parameters
+### RCE倾向性参数
 
 > inurl:cmd | inurl:exec= | inurl:query= | inurl:code= | inurl:do= | inurl:run= | inurl:read=  | inurl:ping= inurl:& site:example.com
 
@@ -52,7 +56,7 @@
 
 > inurl:email= | inurl:phone= | inurl:password= | inurl:secret= inurl:& site:example[.]com
 
-### API Docs
+### API文档搜索
 
 > inurl:apidocs | inurl:api-docs | inurl:swagger | inurl:api-explorer site:"example[.]com"
 
