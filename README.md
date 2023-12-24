@@ -12,7 +12,7 @@ A list of Google Dorks for Bug Bounty, Web Application Security, and Pentesting
 
 > site:example.com -www -shop -share -ir -mfa
 
-### PHP extension w/ parameters
+### PHP站点且带参数
 
 > site:example.com ext:php inurl:?
 
