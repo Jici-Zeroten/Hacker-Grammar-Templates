@@ -1,12 +1,12 @@
 # Google-Dorks-Templates
 
-A list of Google Dorks for Bug Bounty, Web Application Security, and Pentesting
+这是一份Google Dorks的列表，基于原项目[google-dorks-bug-bounty](https://github.com/TakSec/google-dorks-bug-bounty/)的二开，进行了汉化并增加更多语法。
 
-[Live Tool](https://taksec.github.io/google-dorks-bug-bounty/)
-
-![tool screenshot](https://github.com/TakSec/google-dorks-bug-bounty/assets/27094033/3ff009d7-f402-4eb2-8321-ce22eeeb5605)
+在线网址：https://jici-zeroten.github.io/Google-Dorks-Templates/
 
 ---
+
+test
 
 ### Broad domain search w/ negative search
 
