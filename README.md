@@ -18,7 +18,7 @@
 
 > site:openbugbounty.org inurl:reports intext:"example.com"
 
-### Juicy Extensions
+### 敏感文件扩展名披露
 
 > site:"example[.]com" ext:log | ext:txt | ext:conf | ext:cnf | ext:ini | ext:env | ext:sh | ext:bak | ext:backup | ext:swp | ext:old | ext:~ | ext:git | ext:svn | ext:htpasswd | ext:htaccess
 
@@ -104,14 +104,15 @@
 
 > site:firebaseio.com "example[.]com"
 
-### Bug Bounty programs and Vulnerability Disclosure Programs
+### 漏洞报告查询与漏洞提交
 
 > "submit vulnerability report" | "powered by bugcrowd" | "powered by hackerone"
 
-> site:*/security.txt "bounty"
+> site:example[.]com "bounty"
 ### Apache服务器状态暴露
 
 > site:example[.]com inurl:/server-status "apache"
+
 ### WordPress
 
 > site:example[.]com inurl:/wp-admin/admin-ajax.php
