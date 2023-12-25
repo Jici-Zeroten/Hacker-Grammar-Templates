@@ -34,6 +34,16 @@
 
 > inurl:id= | inurl:pid= | inurl:category= | inurl:cat= | inurl:action= | inurl:sid= | inurl:dir= inurl:& site:example.com
 
+> 公司inurl:php?id=
+
+> 公司inurl:asp?id=
+
+> 公司inurl:aspx?id=
+
+> 公司inurl:list.php?id=
+
+注：参数不一定要是id，也可以是tid、keyword之类的其它参数
+
 ### SSRF 倾向性参数
 
 > inurl:http | inurl:url= | inurl:path= | inurl:dest= | inurl:html= | inurl:data= | inurl:domain=  | inurl:page= inurl:& site:example.com
