@@ -129,8 +129,6 @@
 
 > site:example[.]com inurl:/wp-login.php
 
-> site:*."example.com" & inurl:/wp-admin
-
 ### Drupal
 
 > site:example[.]com intext:"Powered by" & intext:Drupal & inurl:user
@@ -168,6 +166,6 @@
 
 > site:example.com intext:"手机号"
 
-### 子域名搜索
+### 子域名搜索（使用 */主域 指定）
 
-> site:*."example.com"
+> site:example.com
