@@ -131,3 +131,25 @@
 > site:example[.]com & intext:"选择文件"
 
 > site:example[.]com "choose file"
+
+### 剑指src
+
+> site:example.com intext:"手册"
+
+> site:example.com intext:"文档"
+
+> site:xx.edu.cn 学号|学工号
+
+> site:xx.edu.cn 奖学金|公示
+
+> site:xx.edu.cn 工号|教职工工号
+
+> site:example.com intext:"忘记密码"
+
+> site:example.com intext:"工号"
+
+> site:example.com intext:"优秀员工"
+
+> site:example.com intext:"身份证号码"
+
+> site:example.com intext:"手机号"
