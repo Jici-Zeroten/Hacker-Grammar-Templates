@@ -106,10 +106,6 @@
                     title = match[1];
                 } else {
                     // Dork match
-                    if (firstDork) {
-                        firstDork = false;
-                        continue;
-                    }
                     const dork = match[2];
                     originalDorks.push(dork);
                     const listItem = createDorkListItem(dork, title);
