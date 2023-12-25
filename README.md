@@ -104,10 +104,6 @@
 
 > site:firebaseio.com "example[.]com"
 
-### File upload endpoints
-
-> site:example.com ”choose file”
-
 ## Dorks that work better w/o domain
 
 ### Bug Bounty programs and Vulnerability Disclosure Programs
@@ -115,11 +111,9 @@
 > "submit vulnerability report" | "powered by bugcrowd" | "powered by hackerone"
 
 > site:*/security.txt "bounty"
-
 ### Apache Server Status Exposed
 
 > site:*/server-status apache
-
 ### WordPress
 
 > inurl:/wp-admin/admin-ajax.php
@@ -131,9 +125,10 @@
 ### Joomla
 
 > site:*/joomla/login
+### 文件上传（File upload endpoints）
 
-### 文件上传（File Upload）
+> site:example[.]com & intext:"choose file"
 
-> (site:example[.]com | site:example[.]org) & intext:"choose file"
+> site:example[.]com & intext:"选择文件"
 
-> (site:example[.]com | site:example[.]org) & intext:"选择文件"
+> site:example.com "choose file"
