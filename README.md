@@ -116,11 +116,11 @@
 > site:*/server-status apache
 ### WordPress
 
-> inurl:/wp-admin/admin-ajax.php
+> site:example[.]com inurl:/wp-admin/admin-ajax.php
 
 ### Drupal
 
-> intext:"Powered by" & intext:Drupal & inurl:user
+> site:example[.]com intext:"Powered by" & intext:Drupal & inurl:user
 
 ### Joomla
 
