@@ -129,7 +129,7 @@
 
 > site:example[.]com inurl:/wp-login.php
 
-> site:*.example[.]com & inurl:/wp-admin
+> site:*.example.com & inurl:/wp-admin
 
 ### Drupal
 
