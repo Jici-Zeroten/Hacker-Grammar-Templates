@@ -170,4 +170,4 @@
 
 ### 子域名搜索
 
-> site:*.example.com
+> site:*."example.com"
