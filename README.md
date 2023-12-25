@@ -10,7 +10,7 @@
 
 > site:example.com -www -shop -share -ir -mfa
 
-### PHP站点且带参数！
+### PHP站点且带参数
 
 > site:example.com ext:php inurl:?
 
@@ -123,7 +123,7 @@
 
 ### Joomla
 
-> site:*/joomla/login
+> site:example[.]com inurl:/joomla/login
 ### 文件上传（File upload endpoints）
 
 > site:example[.]com & intext:"choose file"
