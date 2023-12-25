@@ -12,25 +12,39 @@
 
 > site:example.com -www -shop -share -ir -mfa
 
-### PHP站点且带参数
+### PHP站点
 
 > site:example.com ext:php inurl:?
+
+> site:example.com ext:php intitle:phpinfo 'published by the PHP Group'
+
+> site:example.com inurl:php?=id1 | inurl:index.php?id= | inurl:pageid= | inurl:.php?
 
 ### Disclosed XSS and Open Redirects
 
 > site:openbugbounty.org inurl:reports intext:"example.com"
 
-### 敏感文件扩展名披露
+### 敏感文件披露（密码文件、日志文件、备份文件等）
 
 > site:"example[.]com" ext:log | ext:txt | ext:conf | ext:cnf | ext:ini | ext:env | ext:sh | ext:bak | ext:backup | ext:swp | ext:old | ext:~ | ext:git | ext:svn | ext:htpasswd | ext:htaccess
+
+> site:example.com 'password' filetype:doc | filetype:pdf | filetype:docx | filetype:xls | filetype:dat | filetype:log
+
+> site:example.com ext:xml | ext:conf | ext:cnf | ext:reg | ext:inf | ext:rdp | ext:cfg | ext:txt | ext:ora | ext:ini | ext:log
+
+> site:example.com ext:bkf | ext:bkp | ext:bak | ext:old | ext:backup
 
 ### XSS 倾向性参数
 
 > inurl:q= | inurl:s= | inurl:search= | inurl:query= | inurl:keyword= | inurl:lang= inurl:& site:example.com
 
-### Open Redirect prone parameters
+### Open Redirect 倾向性参数（开放式重定向）
 
 > inurl:url= | inurl:return= | inurl:next= | inurl:redirect= | inurl:redir= | inurl:ret= | inurl:r2= | inurl:page= inurl:& inurl:http site:example.com
+
+> site:example.com inurl:redir | inurl:url | inurl:redirect | inurl:return | inurl:src=http | inurl:r=http
+
+![image-20231225232830312](README/image-20231225232830312.png)
 
 ### SQLi 倾向性参数
 
@@ -80,7 +94,7 @@
 
 > site:codepen.io "example.com"
 
-### Cloud Storage
+### 云存储（Cloud Storage）
 
 > site:s3.amazonaws.com "example.com"
 
@@ -131,6 +145,10 @@
 
 > site:example[.]com inurl:/wp-login.php
 
+> site:example.com inurl:"_wpeprivate"
+
+> site:example.com inurl:wp- | inurl:wp-content | inurl:plugins | inurl:uploads | inurl:themes | inurl:download
+
 ### Drupal
 
 > site:example[.]com intext:"Powered by" & intext:Drupal & inurl:user
@@ -167,3 +185,11 @@
 > site:example.com intext:"身份证号码"
 
 > site:example.com intext:"手机号"
+
+### 数据库相关
+
+> site:example.com intext:'sql syntax near' | intext:'syntax error has occurred' | intext:'incorrect syntax near' | intext:'unexpected end of SQL command' | intext:'Warning: mysql_connect()' | intext:'Warning: mysql_query() | intext:'Warning: pg_connect()' | filetype:sqlext:sql | ext:dbf | ext:mdb
+
+### 登录页面
+
+> site:example.com inurl:login | inurl:signin | intitle:Login | intitle: signin | inurl:auth
