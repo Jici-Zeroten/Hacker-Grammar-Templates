@@ -6,7 +6,7 @@
 
 ---
 
-### Broad domain search w/ negative search
+### 广域搜索（排除指定关键词）
 
 > site:example.com -www -shop -share -ir -mfa
 
@@ -104,16 +104,14 @@
 
 > site:firebaseio.com "example[.]com"
 
-## Dorks that work better w/o domain
-
 ### Bug Bounty programs and Vulnerability Disclosure Programs
 
 > "submit vulnerability report" | "powered by bugcrowd" | "powered by hackerone"
 
 > site:*/security.txt "bounty"
-### Apache Server Status Exposed
+### Apache服务器状态暴露
 
-> site:*/server-status apache
+> site:example[.]com inurl:/server-status "apache"
 ### WordPress
 
 > site:example[.]com inurl:/wp-admin/admin-ajax.php
@@ -131,4 +129,4 @@
 
 > site:example[.]com & intext:"选择文件"
 
-> site:example.com "choose file"
+> site:example[.]com "choose file"
