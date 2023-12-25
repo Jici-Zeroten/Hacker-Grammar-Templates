@@ -34,13 +34,13 @@
 
 > inurl:id= | inurl:pid= | inurl:category= | inurl:cat= | inurl:action= | inurl:sid= | inurl:dir= inurl:& site:example.com
 
-> 公司inurl:php?id=
+> site:example[.]com inurl:php?id=
 
-> 公司inurl:asp?id=
+> site:example[.]com inurl:asp?id=
 
-> 公司inurl:aspx?id=
+> site:example[.]com inurl:aspx?id=
 
-> 公司inurl:list.php?id=
+> site:example[.]com inurl:list.php?id=
 
 注：参数不一定要是id，也可以是tid、keyword之类的其它参数
 
@@ -125,7 +125,9 @@
 
 ### WordPress
 
-> site:example[.]com inurl:/wp-admin/admin-ajax.php
+> site:example[.]com inurl:/wp-admin
+
+> site:example[.]com inurl:/wp-login.php
 
 ### Drupal
 
