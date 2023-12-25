@@ -138,11 +138,11 @@
 
 > site:example.com intext:"文档"
 
-> site:xx.edu.cn 学号|学工号
+> site:example.com 学号|学工号
 
-> site:xx.edu.cn 奖学金|公示
+> site:example.com 奖学金|公示
 
-> site:xx.edu.cn 工号|教职工工号
+> site:example.com 工号|教职工工号
 
 > site:example.com intext:"忘记密码"
 
