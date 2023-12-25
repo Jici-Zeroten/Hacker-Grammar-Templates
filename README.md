@@ -129,6 +129,8 @@
 
 > site:example[.]com inurl:/wp-login.php
 
+> site:*.example[.]com & inurl:/wp-admin
+
 ### Drupal
 
 > site:example[.]com intext:"Powered by" & intext:Drupal & inurl:user
