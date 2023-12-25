@@ -87,31 +87,27 @@
     <hr style="border: none; border-top: 5px solid white;">
     <ul id="dorkList"></ul>
     <script>
-        let originalDorks = [];
-
-        async function fetchDorks() {
+            async function fetchDorks() {
             const url = "https://raw.githubusercontent.com/Jici-Zeroten/Google-Dorks-Templates/main/README.md";
             const response = await fetch(url);
             const text = await response.text();
 
             const dorkList = document.getElementById("dorkList");
             const regex = /(?:^### (.+)|^> (.+))/gm;
-            //const regex = /(?:^### (.+)|^> (.+)|^\* (.+)|^(.+))/gm;
             let match;
             let title = '';
-            let firstDork = true;
+            let isFirstMatch = true; // 添加一个判断条件
 
             while ((match = regex.exec(text)) !== null) {
                 if (match[1]) {
                     // Title match
                     title = match[1];
+                    if (isFirstMatch) {
+                        isFirstMatch = false;
+                        continue; // 跳过第一个匹配
+                    }
                 } else {
                     // Dork match
-                    if (firstDork) {
-                        firstDork = false;
-                        title = match[1];
-                        continue;
-                    }
                     const dork = match[2];
                     originalDorks.push(dork);
                     const listItem = createDorkListItem(dork, title);
