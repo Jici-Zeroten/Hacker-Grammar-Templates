@@ -167,3 +167,7 @@
 > site:example.com intext:"身份证号码"
 
 > site:example.com intext:"手机号"
+
+### 子域名搜索
+
+> site:*.example.com
