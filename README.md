@@ -6,7 +6,9 @@
 
 ---
 
-### 广域搜索（排除指定关键词）
+### 子域名搜索（使用 */主域 指定）
+
+> site:example.com
 
 > site:example.com -www -shop -share -ir -mfa
 
@@ -165,7 +167,3 @@
 > site:example.com intext:"身份证号码"
 
 > site:example.com intext:"手机号"
-
-### 子域名搜索（使用 */主域 指定）
-
-> site:example.com
