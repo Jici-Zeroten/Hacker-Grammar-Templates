@@ -58,7 +58,7 @@
 
 > site:example[.]com intext:"sql syntax near" |  intext:"incorrect syntax near"
 
-注：参数不一定要是id，也可以是tid、keyword之类的其它参数
+注：参数不一定要是id，也可以是pid、tid、keyword之类的其它参数
 
 ### SSRF 倾向性参数
 
