@@ -1,6 +1,6 @@
 # Google-Dorks-Templates
 
-### 子域名搜索（使用 */主域 指定）
+### 子域名搜索（使用 */主域 指定，深层子域使用 \*/\*/主域 指定 ）
 
 > site:example.com
 
@@ -121,6 +121,10 @@
 > site:box.com/s "example[.]com"
 
 > site:docs.google.com inurl:"/d/" "example[.]com"
+
+### AWS 访问密钥（AWS Access Keys）
+
+> site:example[.]com filetype:pem intext:PRIVATE KEY
 
 ### JFrog Artifactory
 
