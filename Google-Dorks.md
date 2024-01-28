@@ -1,6 +1,6 @@
 # Google-Dorks-Templates
 
-### 子域名搜索（使用 */主域 指定 ）
+### 子域名搜索（使用 *.主域 指定 ）
 
 > site:example.com
 
