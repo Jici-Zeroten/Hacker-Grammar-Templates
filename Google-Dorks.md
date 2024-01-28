@@ -10,7 +10,7 @@
 
 > site:example.com ext:php inurl:?
 
-> site:example.com ext:php intitle:phpinfo 'published by the PHP Group'
+> site:example.com ext:php intitle:phpinfo "published by the PHP Group"
 
 > site:example.com inurl:php?=id1 | inurl:index.php?id= | inurl:pageid= | inurl:.php?
 
@@ -22,7 +22,7 @@
 
 > site:"example.com" ext:log | ext:txt | ext:conf | ext:cnf | ext:ini | ext:env | ext:sh | ext:bak | ext:backup | ext:swp | ext:old | ext:~ | ext:git | ext:svn | ext:htpasswd | ext:htaccess
 
-> site:example.com 'password' filetype:doc | filetype:pdf | filetype:docx | filetype:xls | filetype:dat | filetype:log
+> site:example.com "password" filetype:doc | filetype:pdf | filetype:docx | filetype:xls | filetype:dat | filetype:log
 
 > site:example.com ext:xml | ext:conf | ext:cnf | ext:reg | ext:inf | ext:rdp | ext:cfg | ext:txt | ext:ora | ext:ini | ext:log
 
@@ -182,7 +182,7 @@
 
 ### 数据库相关
 
-> site:example.com intext:'sql syntax near' | intext:'syntax error has occurred' | intext:'incorrect syntax near' | intext:'unexpected end of SQL command' | intext:'Warning: mysql_connect()' | intext:'Warning: mysql_query() | intext:'Warning: pg_connect()' | filetype:sqlext:sql | ext:dbf | ext:mdb
+> site:example.com intext:"sql syntax near" | intext:"syntax error has occurred" | intext:"incorrect syntax near" | intext:"unexpected end of SQL command" | intext:"Warning: mysql_connect()" | intext:"Warning: mysql_query() | intext:"Warning: pg_connect()" | filetype:sqlext:sql | ext:dbf | ext:mdb
 
 ### 登录页面
 
