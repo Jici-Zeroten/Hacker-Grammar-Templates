@@ -188,7 +188,7 @@
 
 > site:example.com inurl:login | inurl:signin | intitle:Login | intitle: signin | inurl:auth | intitle:登录
 
-### 赏金项目查找（Bug Bounty Programs，更适用于国外赏金）
+### 漏洞赏金项目查找（Bug Bounty Programs，更适用于国外漏洞赏金）
 
 > site:example.com inurl:bug inurl:bounty
 
