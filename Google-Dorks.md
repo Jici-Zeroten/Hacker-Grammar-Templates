@@ -20,7 +20,7 @@
 
 ### 敏感文件披露（凭据文件、日志文件、备份文件等）
 
-> site:"example[.]com" ext:log | ext:txt | ext:conf | ext:cnf | ext:ini | ext:env | ext:sh | ext:bak | ext:backup | ext:swp | ext:old | ext:~ | ext:git | ext:svn | ext:htpasswd | ext:htaccess
+> site:"example.com" ext:log | ext:txt | ext:conf | ext:cnf | ext:ini | ext:env | ext:sh | ext:bak | ext:backup | ext:swp | ext:old | ext:~ | ext:git | ext:svn | ext:htpasswd | ext:htaccess
 
 > site:example.com 'password' filetype:doc | filetype:pdf | filetype:docx | filetype:xls | filetype:dat | filetype:log
 
@@ -48,15 +48,15 @@
 
 > inurl:id= | inurl:pid= | inurl:category= | inurl:cat= | inurl:action= | inurl:sid= | inurl:dir= inurl:& site:example.com
 
-> site:example[.]com inurl:php?id=
+> site:example.com inurl:php?id=
 
-> site:example[.]com inurl:asp?id=
+> site:example.com inurl:asp?id=
 
-> site:example[.]com inurl:aspx?id=
+> site:example.com inurl:aspx?id=
 
-> site:example[.]com inurl:list.php?id=
+> site:example.com inurl:list.php?id=
 
-> site:example[.]com intext:"sql syntax near" |  intext:"incorrect syntax near"
+> site:example.com intext:"sql syntax near" |  intext:"incorrect syntax near"
 
 注：参数不一定要是id，也可以是pid、tid、keyword之类的其它参数
 
@@ -72,27 +72,17 @@
 
 > inurl:cmd | inurl:exec= | inurl:query= | inurl:code= | inurl:do= | inurl:run= | inurl:read=  | inurl:ping= inurl:& site:example.com
 
-### High % inurl keywords
+### 敏感目录
 
-> inurl:config | inurl:env | inurl:setting | inurl:backup | inurl:admin | inurl:php site:example[.]com
+> inurl:config | inurl:env | inurl:setting | inurl:backup | inurl:admin | inurl:php site:example.com
 
-### Sensitive Parameters
+### 敏感参数（Sensitive Parameters）
 
-> inurl:email= | inurl:phone= | inurl:password= | inurl:secret= inurl:& site:example[.]com
+> inurl:email= | inurl:phone= | inurl:password= | inurl:secret= inurl:& site:example.com
 
 ### API文档搜索
 
-> inurl:apidocs | inurl:api-docs | inurl:swagger | inurl:api-explorer site:"example[.]com"
-
-### Code Leaks
-
-> site:pastebin.com "example.com"
-
-> site:jsfiddle.net "example.com"
-
-> site:codebeautify.org "example.com"
-
-> site:codepen.io "example.com"
+> inurl:apidocs | inurl:api-docs | inurl:swagger | inurl:api-explorer site:"example.com"
 
 ### 云存储（Cloud Storage）
 
@@ -104,50 +94,50 @@
 
 > site:drive.google.com "example.com"
 
-> site:dev.azure.com "example[.]com"
+> site:dev.azure.com "example.com"
 
-> site:onedrive.live.com "example[.]com"
+> site:onedrive.live.com "example.com"
 
-> site:digitaloceanspaces.com "example[.]com"
+> site:digitaloceanspaces.com "example.com"
 
-> site:sharepoint.com "example[.]com"
+> site:sharepoint.com "example.com"
 
-> site:s3-external-1.amazonaws.com "example[.]com"
+> site:s3-external-1.amazonaws.com "example.com"
 
-> site:s3.dualstack.us-east-1.amazonaws.com "example[.]com"
+> site:s3.dualstack.us-east-1.amazonaws.com "example.com"
 
-> site:dropbox.com/s "example[.]com"
+> site:dropbox.com/s "example.com"
 
-> site:box.com/s "example[.]com"
+> site:box.com/s "example.com"
 
-> site:docs.google.com inurl:"/d/" "example[.]com"
+> site:docs.google.com inurl:"/d/" "example.com"
 
 ### AWS 访问密钥（AWS Access Keys）
 
-> site:example[.]com filetype:pem intext:PRIVATE KEY
+> site:example.com filetype:pem intext:PRIVATE KEY
 
 ### JFrog Artifactory
 
-> site:jfrog.io "example[.]com"
+> site:jfrog.io "example.com"
 
 ### Firebase
 
-> site:firebaseio.com "example[.]com"
+> site:firebaseio.com "example.com"
 
 ### 漏洞报告查询与漏洞提交
 
 > "submit vulnerability report" | "powered by bugcrowd" | "powered by hackerone"
 
-> site:example[.]com "bounty"
+> site:example.com "bounty"
 ### Apache服务器状态暴露
 
-> site:example[.]com inurl:/server-status "apache"
+> site:example.com inurl:/server-status "apache"
 
 ### WordPress
 
-> site:example[.]com inurl:/wp-admin
+> site:example.com inurl:/wp-admin
 
-> site:example[.]com inurl:/wp-login.php
+> site:example.com inurl:/wp-login.php
 
 > site:example.com inurl:"_wpeprivate"
 
@@ -155,18 +145,18 @@
 
 ### Drupal
 
-> site:example[.]com intext:"Powered by" & intext:Drupal & inurl:user
+> site:example.com intext:"Powered by" & intext:Drupal & inurl:user
 
 ### Joomla
 
-> site:example[.]com inurl:/joomla/login
+> site:example.com inurl:/joomla/login
 ### 文件上传（File upload endpoints）
 
-> site:example[.]com & intext:"choose file"
+> site:example.com & intext:"choose file"
 
-> site:example[.]com & intext:"选择文件"
+> site:example.com & intext:"选择文件"
 
-> site:example[.]com "choose file"
+> site:example.com "choose file"
 
 ### 剑指src
 
