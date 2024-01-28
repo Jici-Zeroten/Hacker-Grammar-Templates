@@ -198,7 +198,7 @@
 
 > site:example.com inurl:login | inurl:signin | intitle:Login | intitle: signin | inurl:auth | intitle:登录
 
-### 赏金项目查找(Bug Bounty Programs，更适用于国外赏金)
+### 赏金项目查找（Bug Bounty Programs，更适用于国外赏金）
 
 > site:example.com inurl:bug inurl:bounty
 
@@ -228,13 +228,7 @@
 
 > inurl:/security
 
-> inurl:/responsible-disclosure/ swag
-
-> inurl:’/responsible disclosure’ hoodie
-
 > responsible disclosure hall of fame
-
-> inurl:responsible disclosure $50
 
 > responsible disclosure europe
 
