@@ -12,7 +12,7 @@
 
 > site:example.com ext:php intitle:phpinfo "published by the PHP Group"
 
-> site:example.com inurl:php?=id1 | inurl:index.php?id= | inurl:pageid= | inurl:.php?
+> site:example.com inurl:php?id=1 | inurl:index.php?id= | inurl:pageid= | inurl:.php?
 
 ### Disclosed XSS and Open Redirects
 
