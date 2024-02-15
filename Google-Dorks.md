@@ -22,13 +22,39 @@
 
 > site:"example.com" ext:log | ext:txt | ext:conf | ext:cnf | ext:ini | ext:env | ext:sh | ext:bak | ext:backup | ext:swp | ext:old | ext:~ | ext:git | ext:svn | ext:htpasswd | ext:htaccess
 
-> site:example.com "password" filetype:doc | filetype:pdf | filetype:docx | filetype:xls | filetype:dat | filetype:log
+> site:example.com "username | password" filetype:doc | filetype:pdf | filetype:docx | filetype:xls | filetype:dat | filetype:log
 
 > site:example.com ext:xml | ext:conf | ext:cnf | ext:reg | ext:inf | ext:rdp | ext:cfg | ext:txt | ext:ora | ext:ini | ext:log
 
 > site:example.com ext:bkf | ext:bkp | ext:bak | ext:old | ext:backup
 
 > site:example.com intext:"TARGET" & ext:txt | ext:sql | ext:cnf | ext:config | ext:log & intext:"admin" | intext:"root" | intext:"administrator" & intext:"password" | intext:"root" | intext:"admin" | intext:"administrator"
+
+### svn信息泄露
+
+> site:example.com svn
+
+> site:example.com svn username
+
+> site:example.com svn password
+
+> site:example.com svn username password
+
+### 邮件配置信息泄露
+
+> site:example.com smtp
+
+> site:example.com smtp @qq.com
+
+> site:example.com smtp @126.com
+
+> site:example.com smtp @163.com
+
+> site:example.com smtp @sina.com.cn
+
+> site:example.com smtp password
+
+> site:example.com String password smtp
 
 ### XSS 倾向性参数
 
@@ -158,6 +184,10 @@
 
 > site:example.com "choose file"
 
+> site:example.com inurl:file
+
+> site:example.com inurl:upload
+
 ### 剑指src
 
 > site:example.com intext:"手册"
@@ -179,6 +209,16 @@
 > site:example.com intext:"身份证号码"
 
 > site:example.com intext:"手机号"
+
+> site:example.com intext:管理|后台|登陆|用户名|密码|系统|账号
+
+> site:example.com inurl:login/admin/manage/manager/admin_login/system
+
+> site:example.com intitle:管理|后台|登陆
+
+> site:example.com inurl:ewebeditor
+
+> site:example.com inurl:"/admin/login.php"
 
 ### 数据库相关
 
