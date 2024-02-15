@@ -12,7 +12,7 @@
 
 > site:example.com ext:php intitle:phpinfo "published by the PHP Group"
 
-> site:example.com inurl:php?id=1 | inurl:index.php?id= | inurl:pageid= | inurl:.php?
+> site:example.com inurl:php?id= | inurl:index.php?id= | inurl:pageid= | inurl:.php?
 
 ### Disclosed XSS and Open Redirects
 
@@ -88,7 +88,7 @@
 
 ### SSRF 倾向性参数
 
-> inurl:http | inurl:url= | inurl:path= | inurl:dest= | inurl:html= | inurl:data= | inurl:domain=  | inurl:page= inurl:& site:example.com
+> inurl:http | inurl:url= | inurl:path= | inurl:dest= | inurl:html= | inurl:data= | inurl:domain= | inurl:page= inurl:& site:example.com
 
 ### LFI（本地文件包含）倾向性参数
 
@@ -210,11 +210,11 @@
 
 > site:example.com intext:"手机号"
 
-> site:example.com intext:管理|后台|登陆|用户名|密码|系统|账号
+> site:example.com intext:管理|后台|登陆|登录|登入|用户名|密码|系统|账号
 
 > site:example.com inurl:login/admin/manage/manager/admin_login/system
 
-> site:example.com intitle:管理|后台|登陆
+> site:example.com intitle:管理|后台|登陆|登录|登入
 
 > site:example.com inurl:ewebeditor
 
@@ -222,11 +222,11 @@
 
 ### 数据库相关
 
-> site:example.com intext:"sql syntax near" | intext:"syntax error has occurred" | intext:"incorrect syntax near" | intext:"unexpected end of SQL command" | intext:"Warning: mysql_connect()" | intext:"Warning: mysql_query() | intext:"Warning: pg_connect()" | filetype:sqlext:sql | ext:dbf | ext:mdb
+> site:example.com intext:"sql syntax near" | intext:"syntax error has occurred" | intext:"incorrect syntax near" | intext:"unexpected end of SQL command" | intext:"Warning: mysql_connect()" | intext:"Warning: mysql_query()" | intext:"Warning: pg_connect()" | filetype:sqlext:sql | ext:dbf | ext:mdb
 
 ### 登录页面
 
-> site:example.com inurl:login | inurl:signin | intitle:Login | intitle: signin | inurl:auth | intitle:登录
+> site:example.com inurl:login | inurl:signin | intitle:Login | intitle: signin | inurl:auth | intitle:登录| intitle:登陆|intitle:登入
 
 ### 漏洞赏金项目查找（Bug Bounty Programs，更适用于国外漏洞赏金）
 
